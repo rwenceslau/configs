@@ -48,13 +48,13 @@ let g:go_version_warning = 0
 filetype plugin indent on
 syntax on
 cabbr te tabedit
-colorscheme molokai 
+colorscheme molokai
 set expandtab
 set nocompatible
 set laststatus=2
-set tabstop=2
-set shiftwidth=2
-set showtabline=2
+set tabstop=4
+set shiftwidth=4
+set showtabline=4
 set number
 set wrap
 set backspace=0
@@ -73,8 +73,12 @@ noremap  <Down> <Nop>
 noremap  <Left> <Nop>
 noremap  <Right> <Nop>
 
+set ts=4 sw=4
+
 " ag-vim shortcut
 map <Leader>f gagiw
 
 " set nonumber
 highlight Normal ctermbg=None
+
+autocmd FileType yaml setlocal ai ts=4 sw=4 et
